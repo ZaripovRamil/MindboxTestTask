@@ -2,7 +2,7 @@
 
 public abstract class Polygon : Figure
 {
-    public Polygon(double[] sides)
+    protected Polygon(double[] sides)
     {
         if (sides is null)
             throw new NullReferenceException();
@@ -18,5 +18,5 @@ public abstract class Polygon : Figure
         return sides.All(value => value < sum - value && value>0);
     }
 
-    public double[] Sides { get; }
+    protected double[] Sides { get; }
 }
