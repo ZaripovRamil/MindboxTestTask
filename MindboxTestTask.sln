@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindboxTestTask", "MindboxTestTask\MindboxTestTask.csproj", "{C46DA04B-1CEC-43D8-AACE-FBE8D6D2E630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindboxTestTaskTests", "MindboxTestTaskTests\MindboxTestTaskTests.csproj", "{9AC97A28-27A2-43DD-85C0-990987F51ED6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C46DA04B-1CEC-43D8-AACE-FBE8D6D2E630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46DA04B-1CEC-43D8-AACE-FBE8D6D2E630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46DA04B-1CEC-43D8-AACE-FBE8D6D2E630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46DA04B-1CEC-43D8-AACE-FBE8D6D2E630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC97A28-27A2-43DD-85C0-990987F51ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC97A28-27A2-43DD-85C0-990987F51ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC97A28-27A2-43DD-85C0-990987F51ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC97A28-27A2-43DD-85C0-990987F51ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
