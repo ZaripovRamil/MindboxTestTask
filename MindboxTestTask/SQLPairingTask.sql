@@ -39,6 +39,6 @@ Values(2,2)
 INSERT INTO ProductCategoryPairing(productId, categoryId)
 Values(3,3)
 
-SELECT Products.name, Categories.name From ProductCategoryPairing
-    RIGHT JOIN Products ON ProductCategoryPairing.productId = Products.id
+SELECT Products.name, Categories.name From Products
+    LEFT JOIN ProductCategoryPairing ON ProductCategoryPairing.productId = Products.id
     LEFT JOIN Categories ON ProductCategoryPairing.categoryId = Categories.id;
