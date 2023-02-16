@@ -1,6 +1,4 @@
-﻿using System.Collections.Immutable;
-
-namespace MindboxTestTask;
+﻿namespace MindboxTestTask;
 
 public abstract class Polygon : Figure
 {
