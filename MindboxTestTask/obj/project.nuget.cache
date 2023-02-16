@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FbAxXMQBqCHNS7NT5ChSXZ5dIq/3Dkup9WEbO6Ha1rrhtiUfggBU3IOkHJwAmgBDOSsbJZsa2Y41qaTqvUGjtA==",
+  "dgSpecHash": "ioNJNNvGWJjF3igU2lpkMlS0YatI9mWFiM9ag0/nbHmeadRMYTfdJMb/PeIGX+q/Rw85TrOV6a8f87XARSeilQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\RiderProjects\\MindboxTestTask\\MindboxTestTask\\MindboxTestTask.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Work\\MindboxTestTask\\MindboxTestTask\\MindboxTestTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",

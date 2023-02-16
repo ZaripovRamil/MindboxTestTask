@@ -1,4 +1,5 @@
-﻿using MindboxTestTask;
+﻿using System.Collections;
+using MindboxTestTask;
 using NUnit.Framework;
 
 namespace FigureClassTests;
@@ -32,7 +33,7 @@ public class TriangleTests
     [Test]
     public void SidesArrayIsNull_ThrowsException()
     {
-        Assert.Throws<NullReferenceException>(() => creatingTriangle(null));
+        Assert.Throws<ArgumentNullException>(() => creatingTriangle(null));
     }
 
     [Test]
@@ -45,12 +46,19 @@ public class TriangleTests
         Assert.Throws<ArgumentException>(()=>creatingTriangle(sides));
     }
 
-    [TestCase(new double[] {3, 4, 5}, 6)]
-    [TestCase(new double[] {5, 12, 13}, 30)]
-    [TestCase(new double[] {Sqrt2, Sqrt2, 2}, 1)]
-    [TestCase(new double[] {1, 1, 1}, Sqrt3 / 4)]
+    [TestCase(new [] {3, 4, 5}, 6)]
+    [TestCase(new [] {5, 12, 13}, 30)]
+    [TestCase(new [] {1, 1, 1}, Sqrt3 / 4)]
     [Test]
-    public void AreaCorrectlyCounted(double[] sides, double expectedArea)
+    public void AreaCorrectlyCounted(IEnumerable<int> sides, double expectedArea)
+    {
+        var triangle = new Triangle(sides);
+        Assert.AreEqual(expectedArea, triangle.Area, 0.0001);
+    }
+    
+    [TestCase(new [] {Sqrt2, Sqrt2, 2}, 1)]
+    [Test]
+    public void AreaCorrectlyCounted(IEnumerable<double> sides, double expectedArea)
     {
         var triangle = new Triangle(sides);
         Assert.AreEqual(expectedArea, triangle.Area, 0.0001);

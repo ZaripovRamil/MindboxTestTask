@@ -1,21 +1,26 @@
-﻿namespace MindboxTestTask;
+﻿using System.Collections.Immutable;
+
+namespace MindboxTestTask;
 
 public abstract class Polygon : Figure
 {
-    protected Polygon(double[] sides)
+    protected Polygon(IEnumerable<double> sides)
     {
-        if (sides is null)
-            throw new NullReferenceException();
-        if (sides.Length < 3 || !AreValidPolygonSides(sides))
+        Sides = sides.ToArray();
+        if (Sides.Length < 3 || !AreValidPolygonSides())
             throw new ArgumentException();
-        Sides = sides;
+        
     }
+
+    protected Polygon(IEnumerable<int> sides) : this(sides.Select(i => (double) i))
+    {}
+    
     //TODO:add another constructor using dots coordinates array instead of sides array
 
-    private static bool AreValidPolygonSides(double[] sides)
+    private bool AreValidPolygonSides()
     {
-        var sum = sides.Sum();
-        return sides.All(value => value < sum - value && value>0);
+        var sum = Sides.Sum();
+        return Sides.All(value => value < sum - value && value>0);
     }
 
     protected double[] Sides { get; }

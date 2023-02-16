@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LQrW8msVh8Kki4GQinarRKLUpgf8Otia9N+kGL9fSaCw6Chx+EY6GJwK/fut2DyOVTGFMMMntKZJp+9zY/fe4Q==",
+  "dgSpecHash": "YdPYmDRFBTLwjlQl36ar7I6wQJ5AWjJJkOJZBaa1DdE8CU4H/FaglIF0iUukb3mCj2euVtOpbRz1C4ygSqWLnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\RiderProjects\\MindboxTestTask\\MindboxTestTaskTests\\MindboxTestTaskTests.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Work\\MindboxTestTask\\MindboxTestTaskTests\\MindboxTestTaskTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.codecoverage\\17.3.1\\microsoft.codecoverage.17.3.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

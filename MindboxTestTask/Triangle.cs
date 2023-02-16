@@ -2,11 +2,14 @@
 
 public class Triangle : Polygon
 {
-    public Triangle(double[] sides) : base(sides)
+    public Triangle(IEnumerable<double> sides) : base(sides)
     {
-        if (sides.Length != 3)
+        if (!IsTriangle())
             throw new ArgumentException();
     }
+    public Triangle(IEnumerable<int> sides) : base(sides) {}
+
+    private bool IsTriangle() => Sides.Length == 3 && Sides.Sum() > 2 * Sides.Max();
 
     protected override double GetArea()
     {
@@ -18,6 +21,6 @@ public class Triangle : Polygon
     {
         var squaresSum = Sides.Sum(side => side * side);
         var biggestSide = Sides.Max();
-        return Math.Abs(squaresSum - 2 * biggestSide * biggestSide) < 0.001;
+        return Math.Abs(squaresSum - 2 * biggestSide * biggestSide) < double.Epsilon;
     }
 }

@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\RiderProjects\\MindboxTestTask\\MindboxTestTask\\MindboxTestTask.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Work\\MindboxTestTask\\MindboxTestTask\\MindboxTestTask.csproj",
       "projectName": "MindboxTestTask",
-      "projectPath": "C:\\Users\\admin\\RiderProjects\\MindboxTestTask\\MindboxTestTask\\MindboxTestTask.csproj",
+      "projectPath": "C:\\Users\\admin\\Work\\MindboxTestTask\\MindboxTestTask\\MindboxTestTask.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\RiderProjects\\MindboxTestTask\\MindboxTestTask\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Work\\MindboxTestTask\\MindboxTestTask\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -283,7 +283,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

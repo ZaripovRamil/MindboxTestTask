@@ -7,7 +7,7 @@ namespace FigureClassTests;
 public class CircleTests
 {
     private const double Pi = 3.141592653589793;
-    private readonly Action<double> creatingCircle = radius =>
+    private readonly Action<double> _creatingCircle = radius =>
     {
         var circle= new Circle(radius);
     };
@@ -18,7 +18,7 @@ public class CircleTests
     [Test]
     public void InvalidRadius_ThrowsException(double radius)
     {
-        Assert.Throws<ArgumentException>(()=>creatingCircle(radius));
+        Assert.Throws<ArgumentException>(()=>_creatingCircle(radius));
     }
     
     [TestCase(1, Pi)]
